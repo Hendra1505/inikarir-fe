@@ -4,25 +4,334 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
-	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-	<meta name="generator" content="Hugo 0.112.5">
-	<title>Starter Template · Bootstrap v5.3</title>
+	<meta name="author" content="Rahman">
+	<meta name="generator" content="webpack">
+	<title>Ini Karir Starter Template</title>
 
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-	<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-	<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-	<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
-	<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-	<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
-	<meta name="theme-color" content="#712cf9">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">	
 </head>
 
 <body>
-	<header></header>
+	<header>
+		<nav id="navbar" class="navbar navbar-expand-md fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="./assets/images/logo.png" class="w-20 h-auto">
+				</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse pl-0 md:pl-4" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Informasi Lowongan</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Testimoni</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kegiatan</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kontak</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav> <!-- /.end navbar -->
+	</header>
 
 	<main>
-		<div class="p-5 bg-blue-400"></div>
+		<div class="position-relative main-hero">
+			<img src="./assets/images/home-hero.png" alt="Raih karir internasional Impian disini" class="object-cover position-absolute start-0 end-0 top-0 bottom-0 w-100 h-100">
+			<div class="container position-relative h-100">
+				<div class="d-flex flex-col align-items-center h-100 pt-5">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-9 col-lg-8 col-xl-6">
+							<div class="site-name mb-2">
+								Ini<span class="fw-semibold">Karir</span>
+							</div> <!-- ./end site-name -->
+
+							<div class="title mb-3">
+								<h1 class="fw-bolder">Raih karir internasional Impian disini</h1>
+							</div>
+
+							<div class="summary fw-regular">
+								<p>Jelajahi lowongan kerja di luar negeri terbaru dan kirimkan lamaran Kamu sekarang juga untuk memulai karir internasional yang sukses!</p>
+							</div>
+
+							<div class="action mt-5 d-flex gap-4">
+								<a href="#" class="btn btn-dark text-uppercase fw-bold px-3 py-2 rounded">
+									Daftar Sekarang
+								</a>
+
+								<a href="#" class="btn btn-outline-dark text-uppercase fw-bold px-3 py-2 rounded">
+									Jelajahi
+								</a>
+							</div>
+						</div><!-- /.end col -->
+					</div> <!-- ./end row -->
+				</div> <!-- /.end flex -->
+			</div> <!-- /.end container -->
+		</div> <!-- ./end main hero -->
+
+		<div class="offer position-relative">
+			<div class="container">
+				<div class="inner p-5">
+					<div class="row gx-5">
+						<div class="col-12 col-sm-12 col-md-4">
+							<div class="offer-item d-flex align-items-start">
+								<div class="icon">
+									<img src="./assets/icons/light-bulp.png" class="w-100 h-auto" alt="Training Kandidat">
+								</div>
+
+								<div class="content ps-3">
+									<h3 class="title fs-5">Training Kandidat</h3>
+									<p class="summary">IniKarir menyediakan training untuk pembekalan sebelum ke tahap interview</p>
+								</div> <!-- /.end content -->
+							</div> <!-- /.end offer-item -->
+						</div> <!-- ./col -->
+
+						<div class="col-12 col-sm-12 col-md-4">
+							<div class="offer-item d-flex align-items-start">
+								<div class="icon">
+									<img src="./assets/icons/money-bag.png" class="w-100 h-auto" alt="Biaya Terjangkau">
+								</div>
+
+								<div class="content ps-3">
+									<h3 class="title fs-5">Biaya Terjangkau</h3>
+									<p class="summary">Jangan biarkan biaya menghambatmu meraih karir impian</p>
+								</div> <!-- /.end content -->
+							</div> <!-- /.end offer-item -->
+						</div> <!-- ./col -->
+
+						<div class="col-12 col-sm-12 col-md-4">
+							<div class="offer-item d-flex align-items-start">
+								<div class="icon">
+									<img src="./assets/icons/safety-certificate-outlined.png" class="w-100 h-auto" alt="Aman">
+								</div>
+
+								<div class="content ps-3">
+									<h3 class="title fs-5">Aman</h3>
+									<p class="summary">Semua loker yang ada di IniKarir legal dan sudah terdaftar di Kemenaker</p>
+								</div> <!-- /.end content -->
+							</div> <!-- /.end offer-item -->
+						</div> <!-- ./col -->
+					</div> <!-- ./end row -->
+				</div> <!-- /.end inner -->
+			</div> <!-- /.end container -->
+		</div> <!-- ./end offer -->
+
+		<div class="vacancy py-5">
+			<div class="container">
+				<div class="d-block text-center">
+					<div class="section-title d-inline-block mx-auto pb-1 px-1 fw-semibold fs-3 mb-4">Lowongan Kerja</div>
+					<p>Pilih Negara sesuai impianmu disini!</p>
+
+					<div class="flag-tabs d-inline-block mb-3">
+						<ul class="nav nav-underline justify-content-center position-relative">
+							<li class="nav-item">
+								<a class="nav-link d-flex align-items-center" href="#">
+									<span class="icon relative">
+										<img src="./assets/icons/flag-singapore.png" class="w-100 h-auto" alt="Singapore">
+									</span>
+									<span class="d-inline-block ps-1 fw-semibold text">Singapore</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link d-flex align-items-center" href="#">
+									<span class="icon relative">
+										<img src="./assets/icons/flag-saudi-arabia.png" class="w-100 h-auto" alt="Arab Saudi">
+									</span>
+									<span class="d-inline-block ps-1 fw-semibold text">Arab Saudi</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link d-flex align-items-center" href="#">
+									<span class="icon relative">
+										<img src="./assets/icons/flag-turkey.png" class="w-100 h-auto" alt="Turki">
+									</span>
+									<span class="d-inline-block ps-1 fw-semibold text">Turki</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link d-flex align-items-center" href="#">
+									<span class="icon relative">
+										<img src="./assets/icons/flag-kuwait.png" class="w-100 h-auto" alt="Kuwait">
+									</span>
+									<span class="d-inline-block ps-1 fw-semibold text">Kuwait</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link d-flex align-items-center" href="#">
+									<span class="icon relative">
+										<img src="./assets/icons/flag-hungary.png" class="w-100 h-auto" alt="Hungaria">
+									</span>
+									<span class="d-inline-block ps-1 fw-semibold text">Hungaria</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active">
+									<span class="text">Semua</span>
+								</a>
+							</li>
+						</ul>
+					</div> <!-- /.end flag-tabs -->
+				</div> <!-- /.block -->
+
+				<div id="vacancy-slider" class="swiper vacancy-slider p-2">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide p-3">
+							<div class="vacancy-item card">
+								<div class="card-body">
+									<div class="card-image mb-2">
+										<div class="ratio ratio-4x3">
+											<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+										</div> <!-- /.end ratio -->
+									</div> <!-- /.end card-image -->
+									<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+									<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+									<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+
+									<div class="card-action d-block text-end pt-2">
+										<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+									</div>
+								</div> <!-- /.end card-body -->
+							</div> <!-- /.end card -->
+						</div> <!-- /.end slide item -->
+						
+						<div class="swiper-slide p-3">
+							<div class="vacancy-item card">
+								<div class="card-body">
+									<div class="card-image mb-2">
+										<div class="ratio ratio-4x3">
+											<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+										</div> <!-- /.end ratio -->
+									</div> <!-- /.end card-image -->
+									<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+									<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+									<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+
+									<div class="card-action d-block text-end pt-2">
+										<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+									</div>
+								</div> <!-- /.end card-body -->
+							</div> <!-- /.end card -->
+						</div> <!-- /.end slide item -->
+
+						<div class="swiper-slide p-3">
+							<div class="vacancy-item card">
+								<div class="card-body">
+									<div class="card-image mb-2">
+										<div class="ratio ratio-4x3">
+											<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+										</div> <!-- /.end ratio -->
+									</div> <!-- /.end card-image -->
+									<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+									<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+									<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+
+									<div class="card-action d-block text-end pt-2">
+										<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+									</div>
+								</div> <!-- /.end card-body -->
+							</div> <!-- /.end card -->
+						</div> <!-- /.end slide item -->
+
+						<div class="swiper-slide p-3">
+							<div class="vacancy-item card">
+								<div class="card-body">
+									<div class="card-image mb-2">
+										<div class="ratio ratio-4x3">
+											<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+										</div> <!-- /.end ratio -->
+									</div> <!-- /.end card-image -->
+									<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+									<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+									<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+
+									<div class="card-action d-block text-end pt-2">
+										<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+									</div>
+								</div> <!-- /.end card-body -->
+							</div> <!-- /.end card -->
+						</div> <!-- /.end slide item -->
+
+						<div class="swiper-slide p-3">
+							<div class="vacancy-item card">
+								<div class="card-body">
+									<div class="card-image mb-2">
+										<div class="ratio ratio-4x3">
+											<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+										</div> <!-- /.end ratio -->
+									</div> <!-- /.end card-image -->
+									<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+									<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+									<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+
+									<div class="card-action d-block text-end pt-2">
+										<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+									</div>
+								</div> <!-- /.end card-body -->
+							</div> <!-- /.end card -->
+						</div> <!-- /.end slide item -->
+
+						<div class="swiper-slide p-3">
+							<div class="vacancy-item card">
+								<div class="card-body">
+									<div class="card-image mb-2">
+										<div class="ratio ratio-4x3">
+											<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+										</div> <!-- /.end ratio -->
+									</div> <!-- /.end card-image -->
+									<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+									<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+									<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+
+									<div class="card-action d-block text-end pt-2">
+										<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+									</div>
+								</div> <!-- /.end card-body -->
+							</div> <!-- /.end card -->
+						</div> <!-- /.end slide item -->
+
+						<div class="swiper-slide p-3">
+							<div class="vacancy-item card">
+								<div class="card-body">
+									<div class="card-image mb-2">
+										<div class="ratio ratio-4x3">
+											<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+										</div> <!-- /.end ratio -->
+									</div> <!-- /.end card-image -->
+									<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+									<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+									<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+
+									<div class="card-action d-block text-end pt-2">
+										<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+									</div>
+								</div> <!-- /.end card-body -->
+							</div> <!-- /.end card -->
+						</div> <!-- /.end slide item -->
+					</div> <!-- /.end swiper-wrapper -->
+
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev navigation"></div>
+					<div class="swiper-button-next navigation"></div>
+
+					<div class="position-relative ms-2 me-2 mt-3">
+						<div class="swiper-scrollbar"></div>
+					</div>
+				</div> <!-- /.end vacancy-slider -->
+			</div> <!-- /.end container -->
+		</div> <!-- /.end vacancy -->
 	</main>
 
 	<footer class="pt-5 my-5 text-body-secondary border-top">

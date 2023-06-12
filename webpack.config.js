@@ -8,7 +8,8 @@ module.exports = {
 	entry: './src/static/js/main.js',
 	output: {
 		filename: 'main.js',
-		path: path.resolve(__dirname, 'dist')
+		path: path.resolve(__dirname, 'dist'),
+		assetModuleFilename: 'assets/images/[name][ext]',
 	},
 	devServer: {
 		static: path.resolve(__dirname, 'dist'),
@@ -32,7 +33,7 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.(scss)$/,
+				test: /\.(scss|sass|css)$/,
 				use: [
 					{
 						// Adds CSS to the DOM by injecting a `<style>` tag
@@ -58,6 +59,14 @@ module.exports = {
 						loader: 'sass-loader'
 					}
 				],
+			},
+			{
+				test: /\.html$/,
+				use: [
+					{
+						loader: 'html-loader'
+					}
+				]
 			},
 		],
   	},
