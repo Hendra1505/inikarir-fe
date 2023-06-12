@@ -147,7 +147,7 @@ body {
 	}
 }
 
-.vacancy-slider {
+.base-slider {
 	--swiper-navigation-size: 20px;
 	--swiper-navigation-sides-offset: 0;
 	--swiper-scrollbar-size: 7px;
@@ -190,5 +190,67 @@ body {
 		.btn {
 			font-size: 12px;
 		}
+	}
+}
+
+/**
+ * TESTIMONY
+ */
+.testimony-item {
+	.avatar {
+		flex: none;
+		width: 120px;
+		height: 120px;
+
+		&::before {
+			content: "";
+			background-color: var(--app-text-light);
+			position: absolute;
+			top: -3px;
+			left: -7px;
+			border-radius: 50%;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.summary {
+		font-size: 14px;
+	}
+
+	.name {
+		color: var(--app-text-dark);
+	}
+
+	.position {
+		font-size: 13px;
+		color: var(--app-text-light);
+	}
+}
+
+/**
+ * FOOTER
+ */
+.footer {
+	background-color: var(--app-text-dark);
+
+	.menu-block {
+		.title {
+			font-size: 14px;
+		}
+
+		.summary,
+		a {
+			font-size: 12px;
+		}
+
+		ul > li + li {
+			margin-top: 4px;
+		}
+	}
+
+	.credit {
+		border-top: 1px solid rgba(255, 255, 255, .45);
+		font-size: 12px;
 	}
 }

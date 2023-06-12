@@ -13,32 +13,46 @@ import 'swiper/css/scrollbar';
 // ...
 // Navbar
 // ...
-var navbar$ = document.getElementById('navbar');
-var navbarOffsetTop = navbar$.offsetTop;
+var navbarEl$ = document.getElementById('navbar');
+var navbarOffsetTop = navbarEl$.offsetTop;
 
 window.onscroll = function() {
 	if (window.pageYOffset > navbarOffsetTop) {
-		navbar$.classList.add('sticky');
+		navbarEl$.classList.add('sticky');
 	}
 	else {
-		navbar$.classList.remove('sticky');
+		navbarEl$.classList.remove('sticky');
 	}
 }
 
 // ...
 // VACANCY SLIDER
 // ...
-var vacancySlider$ = document.getElementById('vacancy-slider');
-var slider = new Swiper(vacancySlider$, {
+var vacancySliderEl$ = document.getElementById('vacancy-slider');
+var vacancySlider = new Swiper(vacancySliderEl$, {
 	modules: [Navigation, Scrollbar],
 	navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".vacancy-swiper-button-next",
+        prevEl: ".vacancy-swiper-button-prev",
     },
 	scrollbar: {
-        el: ".swiper-scrollbar",
+        el: ".vacancy-swiper-scrollbar",
         hide: false,
     },
 	spaceBetween: 1,
 	slidesPerView: 4,
+});
+
+// ...
+// TESTIMONY SLIDER
+// ...
+var testimonySliderEl$ = document.getElementById('testimony-slider');
+var testimonySlider = new Swiper(testimonySliderEl$, {
+	modules: [Navigation, Scrollbar],
+	navigation: {
+        nextEl: ".testimony-swiper-button-next",
+        prevEl: ".testimony-swiper-button-prev",
+    },
+	spaceBetween: 20,
+	slidesPerView: 2,
 });
