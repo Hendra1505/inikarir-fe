@@ -28,8 +28,7 @@ window.onscroll = function() {
 // ...
 // VACANCY SLIDER
 // ...
-var vacancySliderEl$ = document.getElementById('vacancy-slider');
-var vacancySlider = new Swiper(vacancySliderEl$, {
+var vacancySlider = new Swiper('.vacancy-slider', {
 	modules: [Navigation, Scrollbar],
 	navigation: {
         nextEl: ".vacancy-swiper-button-next",
@@ -41,6 +40,12 @@ var vacancySlider = new Swiper(vacancySliderEl$, {
     },
 	spaceBetween: 1,
 	slidesPerView: 4,
+});
+
+const tabEl = document.querySelector('a[data-bs-toggle="tab"]')
+tabEl.addEventListener('shown.bs.tab', event => {
+	event.target // newly activated tab
+	event.relatedTarget // previous active tab
 });
 
 // ...

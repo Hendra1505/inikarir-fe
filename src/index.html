@@ -136,41 +136,41 @@
 					<p>Pilih Negara sesuai impianmu disini!</p>
 
 					<div class="flag-tabs d-inline-block mb-3">
-						<ul class="nav nav-underline justify-content-center position-relative">
-							<li class="nav-item">
-								<a class="nav-link d-flex align-items-center" href="#">
+						<ul class="nav nav-underline justify-content-center position-relative" id="vacancy-tab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<a class="nav-link active d-flex align-items-center" href="#" id="singapore-tab" data-bs-toggle="tab" data-bs-target="#singapore-tab-pane" role="tab">
 									<span class="icon relative">
 										<img src="./assets/icons/flag-singapore.png" class="w-100 h-auto" alt="Singapore">
 									</span>
 									<span class="d-inline-block ps-1 fw-semibold text">Singapore</span>
 								</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link d-flex align-items-center" href="#">
+							<li class="nav-item" role="presentation">
+								<a class="nav-link d-flex align-items-center" href="#" id="saudi-tab" data-bs-toggle="tab" data-bs-target="#saudi-tab-pane" role="tab">
 									<span class="icon relative">
 										<img src="./assets/icons/flag-saudi-arabia.png" class="w-100 h-auto" alt="Arab Saudi">
 									</span>
 									<span class="d-inline-block ps-1 fw-semibold text">Arab Saudi</span>
 								</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link d-flex align-items-center" href="#">
+							<li class="nav-item" role="presentation">
+								<a class="nav-link d-flex align-items-center" href="#" id="turki-tab" data-bs-toggle="tab" data-bs-target="#turki-tab-pane" role="tab">
 									<span class="icon relative">
 										<img src="./assets/icons/flag-turkey.png" class="w-100 h-auto" alt="Turki">
 									</span>
 									<span class="d-inline-block ps-1 fw-semibold text">Turki</span>
 								</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link d-flex align-items-center" href="#">
+							<li class="nav-item" role="presentation">
+								<a class="nav-link d-flex align-items-center" href="#" id="kuwait-tab" data-bs-toggle="tab" data-bs-target="#kuwait-tab-pane" role="tab">
 									<span class="icon relative">
 										<img src="./assets/icons/flag-kuwait.png" class="w-100 h-auto" alt="Kuwait">
 									</span>
 									<span class="d-inline-block ps-1 fw-semibold text">Kuwait</span>
 								</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link d-flex align-items-center" href="#">
+							<li class="nav-item" role="presentation">
+								<a class="nav-link d-flex align-items-center" href="#" id="hungaria-tab" data-bs-toggle="tab" data-bs-target="#hungaria-tab-pane" role="tab">
 									<span class="icon relative">
 										<img src="./assets/icons/flag-hungary.png" class="w-100 h-auto" alt="Hungaria">
 									</span>
@@ -178,7 +178,7 @@
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active">
+								<a class="nav-link">
 									<span class="text">Semua</span>
 								</a>
 							</li>
@@ -186,150 +186,313 @@
 					</div> <!-- /.end flag-tabs -->
 				</div> <!-- /.block -->
 
-				<div id="vacancy-slider" class="swiper vacancy-slider base-slider p-2">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide p-3">
-							<div class="vacancy-item card">
-								<div class="card-body">
-									<div class="card-image mb-2">
-										<div class="ratio ratio-4x3">
-											<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
-										</div> <!-- /.end ratio -->
-									</div> <!-- /.end card-image -->
-									<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
-									<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
-									<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+				<div class="tab-content" id="vacancy-tab-content">
+					<div class="tab-pane fade show active" id="singapore-tab-pane" role="tabpanel" aria-labelledby="singapore-tab" tabindex="0">
+						<div class="swiper vacancy-slider base-slider p-2">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide p-3">
+									<div class="vacancy-item card">
+										<div class="card-body">
+											<div class="card-image mb-2">
+												<div class="ratio ratio-4x3">
+													<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+												</div> <!-- /.end ratio -->
+											</div> <!-- /.end card-image -->
+											<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+											<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+											<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
 
-									<div class="card-action d-block text-end pt-2">
-										<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
-									</div>
-								</div> <!-- /.end card-body -->
-							</div> <!-- /.end card -->
-						</div> <!-- /.end slide item -->
-						
-						<div class="swiper-slide p-3">
-							<div class="vacancy-item card">
-								<div class="card-body">
-									<div class="card-image mb-2">
-										<div class="ratio ratio-4x3">
-											<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
-										</div> <!-- /.end ratio -->
-									</div> <!-- /.end card-image -->
-									<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
-									<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
-									<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+											<div class="card-action d-block text-end pt-2">
+												<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+											</div>
+										</div> <!-- /.end card-body -->
+									</div> <!-- /.end card -->
+								</div> <!-- /.end slide item -->
+								
+								<div class="swiper-slide p-3">
+									<div class="vacancy-item card">
+										<div class="card-body">
+											<div class="card-image mb-2">
+												<div class="ratio ratio-4x3">
+													<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+												</div> <!-- /.end ratio -->
+											</div> <!-- /.end card-image -->
+											<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+											<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+											<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
 
-									<div class="card-action d-block text-end pt-2">
-										<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
-									</div>
-								</div> <!-- /.end card-body -->
-							</div> <!-- /.end card -->
-						</div> <!-- /.end slide item -->
+											<div class="card-action d-block text-end pt-2">
+												<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+											</div>
+										</div> <!-- /.end card-body -->
+									</div> <!-- /.end card -->
+								</div> <!-- /.end slide item -->
 
-						<div class="swiper-slide p-3">
-							<div class="vacancy-item card">
-								<div class="card-body">
-									<div class="card-image mb-2">
-										<div class="ratio ratio-4x3">
-											<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
-										</div> <!-- /.end ratio -->
-									</div> <!-- /.end card-image -->
-									<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
-									<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
-									<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+								<div class="swiper-slide p-3">
+									<div class="vacancy-item card">
+										<div class="card-body">
+											<div class="card-image mb-2">
+												<div class="ratio ratio-4x3">
+													<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+												</div> <!-- /.end ratio -->
+											</div> <!-- /.end card-image -->
+											<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+											<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+											<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
 
-									<div class="card-action d-block text-end pt-2">
-										<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
-									</div>
-								</div> <!-- /.end card-body -->
-							</div> <!-- /.end card -->
-						</div> <!-- /.end slide item -->
+											<div class="card-action d-block text-end pt-2">
+												<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+											</div>
+										</div> <!-- /.end card-body -->
+									</div> <!-- /.end card -->
+								</div> <!-- /.end slide item -->
 
-						<div class="swiper-slide p-3">
-							<div class="vacancy-item card">
-								<div class="card-body">
-									<div class="card-image mb-2">
-										<div class="ratio ratio-4x3">
-											<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
-										</div> <!-- /.end ratio -->
-									</div> <!-- /.end card-image -->
-									<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
-									<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
-									<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+								<div class="swiper-slide p-3">
+									<div class="vacancy-item card">
+										<div class="card-body">
+											<div class="card-image mb-2">
+												<div class="ratio ratio-4x3">
+													<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+												</div> <!-- /.end ratio -->
+											</div> <!-- /.end card-image -->
+											<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+											<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+											<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
 
-									<div class="card-action d-block text-end pt-2">
-										<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
-									</div>
-								</div> <!-- /.end card-body -->
-							</div> <!-- /.end card -->
-						</div> <!-- /.end slide item -->
+											<div class="card-action d-block text-end pt-2">
+												<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+											</div>
+										</div> <!-- /.end card-body -->
+									</div> <!-- /.end card -->
+								</div> <!-- /.end slide item -->
 
-						<div class="swiper-slide p-3">
-							<div class="vacancy-item card">
-								<div class="card-body">
-									<div class="card-image mb-2">
-										<div class="ratio ratio-4x3">
-											<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
-										</div> <!-- /.end ratio -->
-									</div> <!-- /.end card-image -->
-									<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
-									<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
-									<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+								<div class="swiper-slide p-3">
+									<div class="vacancy-item card">
+										<div class="card-body">
+											<div class="card-image mb-2">
+												<div class="ratio ratio-4x3">
+													<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+												</div> <!-- /.end ratio -->
+											</div> <!-- /.end card-image -->
+											<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+											<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+											<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
 
-									<div class="card-action d-block text-end pt-2">
-										<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
-									</div>
-								</div> <!-- /.end card-body -->
-							</div> <!-- /.end card -->
-						</div> <!-- /.end slide item -->
+											<div class="card-action d-block text-end pt-2">
+												<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+											</div>
+										</div> <!-- /.end card-body -->
+									</div> <!-- /.end card -->
+								</div> <!-- /.end slide item -->
 
-						<div class="swiper-slide p-3">
-							<div class="vacancy-item card">
-								<div class="card-body">
-									<div class="card-image mb-2">
-										<div class="ratio ratio-4x3">
-											<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
-										</div> <!-- /.end ratio -->
-									</div> <!-- /.end card-image -->
-									<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
-									<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
-									<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+								<div class="swiper-slide p-3">
+									<div class="vacancy-item card">
+										<div class="card-body">
+											<div class="card-image mb-2">
+												<div class="ratio ratio-4x3">
+													<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+												</div> <!-- /.end ratio -->
+											</div> <!-- /.end card-image -->
+											<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+											<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+											<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
 
-									<div class="card-action d-block text-end pt-2">
-										<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
-									</div>
-								</div> <!-- /.end card-body -->
-							</div> <!-- /.end card -->
-						</div> <!-- /.end slide item -->
+											<div class="card-action d-block text-end pt-2">
+												<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+											</div>
+										</div> <!-- /.end card-body -->
+									</div> <!-- /.end card -->
+								</div> <!-- /.end slide item -->
 
-						<div class="swiper-slide p-3">
-							<div class="vacancy-item card">
-								<div class="card-body">
-									<div class="card-image mb-2">
-										<div class="ratio ratio-4x3">
-											<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
-										</div> <!-- /.end ratio -->
-									</div> <!-- /.end card-image -->
-									<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
-									<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
-									<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+								<div class="swiper-slide p-3">
+									<div class="vacancy-item card">
+										<div class="card-body">
+											<div class="card-image mb-2">
+												<div class="ratio ratio-4x3">
+													<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+												</div> <!-- /.end ratio -->
+											</div> <!-- /.end card-image -->
+											<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+											<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+											<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
 
-									<div class="card-action d-block text-end pt-2">
-										<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
-									</div>
-								</div> <!-- /.end card-body -->
-							</div> <!-- /.end card -->
-						</div> <!-- /.end slide item -->
-					</div> <!-- /.end swiper-wrapper -->
+											<div class="card-action d-block text-end pt-2">
+												<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+											</div>
+										</div> <!-- /.end card-body -->
+									</div> <!-- /.end card -->
+								</div> <!-- /.end slide item -->
+							</div> <!-- /.end swiper-wrapper -->
 
-					<!-- If we need navigation buttons -->
-					<div class="vacancy-swiper-button-prev swiper-button-prev navigation"></div>
-					<div class="vacancy-swiper-button-next swiper-button-next navigation"></div>
+							<!-- If we need navigation buttons -->
+							<div class="vacancy-swiper-button-prev swiper-button-prev navigation"></div>
+							<div class="vacancy-swiper-button-next swiper-button-next navigation"></div>
 
-					<div class="position-relative ms-2 me-2 mt-3">
-						<div class="vacancy-swiper-scrollbar swiper-scrollbar"></div>
-					</div>
-				</div> <!-- /.end vacancy-slider -->
+							<div class="position-relative ms-2 me-2 mt-3">
+								<div class="vacancy-swiper-scrollbar swiper-scrollbar"></div>
+							</div>
+						</div> <!-- /.end vacancy-slider -->
+					</div> <!-- /.end tab-pane -->
+
+					<div class="tab-pane fade show" id="saudi-tab-pane" role="tabpanel" aria-labelledby="saudi-tab" tabindex="0">
+						<div class="swiper vacancy-slider base-slider p-2">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide p-3">
+									<div class="vacancy-item card">
+										<div class="card-body">
+											<div class="card-image mb-2">
+												<div class="ratio ratio-4x3">
+													<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+												</div> <!-- /.end ratio -->
+											</div> <!-- /.end card-image -->
+											<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+											<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+											<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+
+											<div class="card-action d-block text-end pt-2">
+												<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+											</div>
+										</div> <!-- /.end card-body -->
+									</div> <!-- /.end card -->
+								</div> <!-- /.end slide item -->
+								
+								<div class="swiper-slide p-3">
+									<div class="vacancy-item card">
+										<div class="card-body">
+											<div class="card-image mb-2">
+												<div class="ratio ratio-4x3">
+													<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+												</div> <!-- /.end ratio -->
+											</div> <!-- /.end card-image -->
+											<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+											<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+											<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+
+											<div class="card-action d-block text-end pt-2">
+												<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+											</div>
+										</div> <!-- /.end card-body -->
+									</div> <!-- /.end card -->
+								</div> <!-- /.end slide item -->
+
+								<div class="swiper-slide p-3">
+									<div class="vacancy-item card">
+										<div class="card-body">
+											<div class="card-image mb-2">
+												<div class="ratio ratio-4x3">
+													<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+												</div> <!-- /.end ratio -->
+											</div> <!-- /.end card-image -->
+											<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+											<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+											<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+
+											<div class="card-action d-block text-end pt-2">
+												<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+											</div>
+										</div> <!-- /.end card-body -->
+									</div> <!-- /.end card -->
+								</div> <!-- /.end slide item -->
+
+								<div class="swiper-slide p-3">
+									<div class="vacancy-item card">
+										<div class="card-body">
+											<div class="card-image mb-2">
+												<div class="ratio ratio-4x3">
+													<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+												</div> <!-- /.end ratio -->
+											</div> <!-- /.end card-image -->
+											<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+											<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+											<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+
+											<div class="card-action d-block text-end pt-2">
+												<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+											</div>
+										</div> <!-- /.end card-body -->
+									</div> <!-- /.end card -->
+								</div> <!-- /.end slide item -->
+
+								<div class="swiper-slide p-3">
+									<div class="vacancy-item card">
+										<div class="card-body">
+											<div class="card-image mb-2">
+												<div class="ratio ratio-4x3">
+													<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+												</div> <!-- /.end ratio -->
+											</div> <!-- /.end card-image -->
+											<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+											<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+											<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+
+											<div class="card-action d-block text-end pt-2">
+												<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+											</div>
+										</div> <!-- /.end card-body -->
+									</div> <!-- /.end card -->
+								</div> <!-- /.end slide item -->
+
+								<div class="swiper-slide p-3">
+									<div class="vacancy-item card">
+										<div class="card-body">
+											<div class="card-image mb-2">
+												<div class="ratio ratio-4x3">
+													<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+												</div> <!-- /.end ratio -->
+											</div> <!-- /.end card-image -->
+											<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+											<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+											<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+
+											<div class="card-action d-block text-end pt-2">
+												<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+											</div>
+										</div> <!-- /.end card-body -->
+									</div> <!-- /.end card -->
+								</div> <!-- /.end slide item -->
+
+								<div class="swiper-slide p-3">
+									<div class="vacancy-item card">
+										<div class="card-body">
+											<div class="card-image mb-2">
+												<div class="ratio ratio-4x3">
+													<img src="./assets/images/AL-Takhassusi-Hospital 1.png" class="w-100" alt="Dr. Sulaiman Al Habib Hospital Saudi Arabia">
+												</div> <!-- /.end ratio -->
+											</div> <!-- /.end card-image -->
+											<div class="card-title fw-semibold">Dr. Sulaiman Al Habib Hospital Saudi Arabia</div>
+											<div class="card-subtitle fw-semibold mb-1">Perawat & Bidan</div>
+											<p class="card-text">Gaji hingga 25 Juta Perbulan dan kesempatan UMROH secara Gratis.</p>
+
+											<div class="card-action d-block text-end pt-2">
+												<a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
+											</div>
+										</div> <!-- /.end card-body -->
+									</div> <!-- /.end card -->
+								</div> <!-- /.end slide item -->
+							</div> <!-- /.end swiper-wrapper -->
+
+							<!-- If we need navigation buttons -->
+							<div class="vacancy-swiper-button-prev swiper-button-prev navigation"></div>
+							<div class="vacancy-swiper-button-next swiper-button-next navigation"></div>
+
+							<div class="position-relative ms-2 me-2 mt-3">
+								<div class="vacancy-swiper-scrollbar swiper-scrollbar"></div>
+							</div>
+						</div> <!-- /.end vacancy-slider -->
+					</div> <!-- /.end tab-pane -->
+
+					<div class="tab-pane fade show" id="turki-tab-pane" role="tabpanel" aria-labelledby="turki-tab" tabindex="0">
+						Turki
+					</div> <!-- /.end tab-pane -->
+
+					<div class="tab-pane fade show" id="kuwait-tab-pane" role="tabpanel" aria-labelledby="kuwait-tab" tabindex="0">
+						Kuwait
+					</div> <!-- /.end tab-pane -->
+
+					<div class="tab-pane fade show" id="hungaria-tab-pane" role="tabpanel" aria-labelledby="hungaria-tab" tabindex="0">
+						Hungaria
+					</div> <!-- /.end tab-pane -->
+				</div> <!-- /.end tab-content -->
 			</div> <!-- /.end container -->
 		</div> <!-- /.end vacancy -->
 

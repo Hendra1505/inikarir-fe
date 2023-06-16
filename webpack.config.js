@@ -1,7 +1,8 @@
 'use strict'
 
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require("webpack");
 
 module.exports = {
 	mode: 'development',
@@ -28,6 +29,10 @@ module.exports = {
 			filename: 'detail.html',
 			template: './src/detail.html',
 			chunks: ['main'],
+		}),
+		new webpack.ProvidePlugin({
+			$: "jquery",
+			jQuery: "jquery"
 		}),
 	],
 	module: {
