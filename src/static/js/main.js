@@ -5,7 +5,7 @@ import '../scss/styles.scss';
 import * as bootstrap from 'bootstrap';
 
 // import Swiper JS
-import Swiper, { Navigation, Scrollbar } from 'swiper';
+import Swiper, { Navigation, Scrollbar, Autoplay, Thumbs } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
@@ -55,4 +55,34 @@ var testimonySlider = new Swiper(testimonySliderEl$, {
     },
 	spaceBetween: 20,
 	slidesPerView: 2,
+});
+
+// ...
+// GALLERY SLIDER
+// ...
+var gallerySliderEl$ = document.getElementById('gallery');
+var gallerySliderChildsEl$ = document.getElementById('gallery-childs');
+
+var galleryChildsSlider = new Swiper(gallerySliderChildsEl$, {
+	modules: [Autoplay],
+	slidesPerView: 4,
+	spaceBetween: 10,
+	loop: true,
+	freeMode: true,
+	watchSlidesProgress: true,
+	autoplay: {
+		delay: 2000,
+	},
+});
+
+var gallerySlider = new Swiper(gallerySliderEl$, {
+	modules: [Autoplay, Thumbs],
+	spaceBetween: 0,
+	loop: true,
+	autoplay: {
+		delay: 2000,
+	},
+	thumbs: {
+        swiper: galleryChildsSlider,
+    },
 });
