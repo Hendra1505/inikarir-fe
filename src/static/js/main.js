@@ -39,7 +39,25 @@ var vacancySlider = new Swiper('.vacancy-slider', {
         hide: false,
     },
 	spaceBetween: 1,
-	slidesPerView: 4,
+	slidesPerView: 1,
+	breakpoints: {
+		480: {
+			spaceBetween: 1,
+			slidesPerView: 2,
+		},
+		767: {
+			spaceBetween: 1,
+			slidesPerView: 2,
+		},
+		980: {
+			spaceBetween: 1,
+			slidesPerView: 3,
+		},
+		1200: {
+			spaceBetween: 1,
+			slidesPerView: 4,
+		}
+	},
 });
 
 const tabEl = document.querySelector('a[data-bs-toggle="tab"]')
@@ -58,8 +76,26 @@ var testimonySlider = new Swiper(testimonySliderEl$, {
         nextEl: ".testimony-swiper-button-next",
         prevEl: ".testimony-swiper-button-prev",
     },
-	spaceBetween: 20,
-	slidesPerView: 2,
+	spaceBetween: 0,
+	slidesPerView: 1,
+	breakpoints: {
+		480: {
+			spaceBetween: 0,
+			slidesPerView: 1,
+		},
+		767: {
+			spaceBetween: 10,
+			slidesPerView: 2,
+		},
+		980: {
+			spaceBetween: 15,
+			slidesPerView: 2,
+		},
+		1200: {
+			spaceBetween: 20,
+			slidesPerView: 2,
+		}
+	},
 });
 
 // ...
