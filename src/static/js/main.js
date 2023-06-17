@@ -127,3 +127,24 @@ var gallerySlider = new Swiper(gallerySliderEl$, {
         swiper: galleryChildsSlider,
     },
 });
+
+// ...
+// SUBSCRIPTION
+// ...
+var subscriptionEl$ = document.getElementById('subscribe');
+var footerEl$ = document.getElementById('footer');
+var main$ = document.getElementById('main');
+
+window.addEventListener('scroll', (event) => {
+	var subscriptionOffsetTop = subscriptionEl$.offsetTop;
+	var subscriptionHeight = subscriptionEl$.offsetHeight;
+	var footerOffsetTop = footerEl$.offsetTop;
+	var pageYOffset = window.pageYOffset;
+
+	if ((pageYOffset + 400) >= subscriptionOffsetTop && (footerOffsetTop - subscriptionHeight) > pageYOffset) {
+		main$.classList.add('highlight-subscription');
+	}
+	else {
+		main$.classList.remove('highlight-subscription');
+	}
+});
