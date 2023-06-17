@@ -371,6 +371,29 @@ body {
 }
 
 /**
+ * REGISTER BUTTON
+ */
+.register-button {
+	top: 50%;
+	z-index: 99999;
+	right: -10px !important;
+
+	a {
+		background-color: #D11C24;
+		rotate: -90deg;
+		margin-right: -20px;
+		padding: 5px 15px;
+		text-decoration: none;
+		border-top-left-radius: 6px;
+		border-top-right-radius: 6px;
+		font-size: 15px;
+		box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.25);
+		-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.25);
+		-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.25);
+	}
+}
+
+/**
  * BREAKPOINTS
  */
 @media (max-width: 768px) {
@@ -389,7 +412,7 @@ body {
 		}
 
 		[class^="col-"] + [class^="col-"] {
-			margin-top: 15px;
+			margin-top: 25px;
 		}
 
 		.summary {
