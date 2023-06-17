@@ -141,7 +141,7 @@ window.addEventListener('scroll', (event) => {
 	var footerOffsetTop = footerEl$.offsetTop;
 	var pageYOffset = window.pageYOffset;
 
-	if ((pageYOffset + 400) >= subscriptionOffsetTop && (footerOffsetTop - subscriptionHeight) > pageYOffset) {
+	if ((pageYOffset + 400) >= subscriptionOffsetTop && (footerOffsetTop - subscriptionHeight - 200) > pageYOffset) {
 		main$.classList.add('highlight-subscription');
 	}
 	else {
