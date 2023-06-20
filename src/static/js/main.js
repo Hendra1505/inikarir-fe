@@ -10,6 +10,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 
+var body$ = document.getElementsByTagName('body')[0];
+
 // ...
 // Navbar
 // ...
@@ -24,6 +26,15 @@ window.onscroll = function() {
 		navbarEl$.classList.remove('sticky');
 	}
 }
+
+const myCollapsible = document.getElementById('navbarSupportedContent');
+myCollapsible.addEventListener('show.bs.collapse', event => {
+	body$.classList.add('navbar-open');
+});
+
+myCollapsible.addEventListener('hidden.bs.collapse', event => {
+	body$.classList.remove('navbar-open');
+});
 
 // ...
 // VACANCY SLIDER
@@ -141,10 +152,10 @@ window.addEventListener('scroll', (event) => {
 	var footerOffsetTop = footerEl$.offsetTop;
 	var pageYOffset = window.pageYOffset;
 
-	if ((pageYOffset + 400) >= subscriptionOffsetTop && (footerOffsetTop - subscriptionHeight - 200) > pageYOffset) {
-		main$.classList.add('highlight-subscription');
+	if ((pageYOffset + 400) >= subscriptionOffsetTop) {
+		body$.classList.add('highlight-subscription');
 	}
 	else {
-		main$.classList.remove('highlight-subscription');
+		body$.classList.remove('highlight-subscription');
 	}
 });
