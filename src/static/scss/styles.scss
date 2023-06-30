@@ -557,7 +557,36 @@ body {
 /**
  * BREAKPOINTS
  */
- @media (max-width: 991px) {
+.container {
+	max-width: 1100px;
+}
+
+/**
+ * FLOW PROCESS
+ */
+.flow-process {
+	.item {
+		background-color: #0D4749;
+		min-height: 225px;
+
+		.title {
+			font-size: 12px;
+		}
+
+		.icon {
+			img {
+				width: 60px;
+				height: auto;
+			}
+		}
+	}
+
+	div[class^="col-"] {
+		margin-bottom: 45px;
+	}
+}
+
+@media (max-width: 991px) {
 	.enroll-items {
 		> div[class^="col-"]:first-child {
 			border-right: 0;
@@ -567,7 +596,7 @@ body {
 			margin-top: 20px;
 		}
 	}
- }
+}
 
 @media (max-width: 768px) {
 	.container {
