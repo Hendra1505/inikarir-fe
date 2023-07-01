@@ -570,7 +570,7 @@ body {
 		min-height: 225px;
 
 		.title {
-			font-size: 12px;
+			font-size: 11px;
 		}
 
 		.icon {
@@ -581,8 +581,15 @@ body {
 		}
 	}
 
-	div[class^="col-"] {
-		margin-bottom: 45px;
+	// div[class^="col-"] {
+	// 	margin-bottom: 45px;
+	// }
+
+	.note {
+		left: 242px;
+		right: 16px;
+		bottom: 5px;
+		height: 242px;
 	}
 }
 

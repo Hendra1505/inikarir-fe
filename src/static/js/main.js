@@ -28,13 +28,16 @@ window.onscroll = function() {
 }
 
 const myCollapsible = document.getElementById('navbarSupportedContent');
-myCollapsible.addEventListener('show.bs.collapse', event => {
-	body$.classList.add('navbar-open');
-});
 
-myCollapsible.addEventListener('hidden.bs.collapse', event => {
-	body$.classList.remove('navbar-open');
-});
+if (myCollapsible) {
+	myCollapsible.addEventListener('show.bs.collapse', event => {
+		body$.classList.add('navbar-open');
+	});
+
+	myCollapsible.addEventListener('hidden.bs.collapse', event => {
+		body$.classList.remove('navbar-open');
+	});
+}
 
 // ...
 // VACANCY SLIDER
@@ -71,11 +74,13 @@ var vacancySlider = new Swiper('.vacancy-slider', {
 	},
 });
 
-const tabEl = document.querySelector('a[data-bs-toggle="tab"]')
-tabEl.addEventListener('shown.bs.tab', event => {
-	event.target // newly activated tab
-	event.relatedTarget // previous active tab
-});
+const tabEl = document.querySelector('a[data-bs-toggle="tab"]');
+if (tabEl) {
+	tabEl.addEventListener('shown.bs.tab', event => {
+		event.target // newly activated tab
+		event.relatedTarget // previous active tab
+	});
+}
 
 // ...
 // TESTIMONY SLIDER
@@ -159,3 +164,41 @@ window.addEventListener('scroll', (event) => {
 		body$.classList.remove('highlight-subscription');
 	}
 });
+
+const calculate = () => {
+	const flowProcessImgEl = document.getElementById('flow-process-image');
+
+	if (flowProcessImgEl) {
+		const w = flowProcessImgEl.offsetWidth;
+		const actualWidth = w - 32;
+		const h = flowProcessImgEl.offsetHeight;
+		const actualHeight = h - 32;
+
+		const cardWidth = actualWidth / 5;
+		const gapWidth = cardWidth * (32/100);
+		const actualCardWidth = cardWidth - gapWidth;
+		const totalCardWidth = actualCardWidth * 5;
+		const widthLeft = actualWidth - totalCardWidth;
+
+		const cardHeight = actualHeight / 3;
+		const cardHeightGap = cardHeight * (32/100);
+		const actualCardHeight = cardHeight - cardHeightGap;
+
+		const flowProcessNoteEl = document.getElementById('flow-process-note');
+
+		flowProcessNoteEl.style.left = (gapWidth + actualCardWidth) + (gapWidth / 2) + 'px';
+		flowProcessNoteEl.style.height = ((cardHeightGap / 2) + actualCardHeight - 18) + 'px';
+
+		// wc: 142
+		// hc: 256
+		// gc: 76
+	}
+}
+
+window.addEventListener('resize', (event) => {
+	calculate();
+}, true);
+
+window.addEventListener('load', (event) => {
+	calculate();
+}, true);
