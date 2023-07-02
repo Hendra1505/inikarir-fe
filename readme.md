@@ -6,17 +6,17 @@ Template dibuat menggunakan webpack sebagai module bundlernya. Pastikan sebelum 
 
 Untuk melakukan perubahan silahkan modifikasi file
 
-[1] index.html
-[2] detail.html
-[3] static/js/main.js
-[4] static/scss/styles.scss
+1. index.html
+2. detail.html
+3. static/js/main.js
+4. static/scss/styles.scss
 
 ## Menjalankan
 
-[1] Pull repository ini
-[2] Buka terminal / powershell (pada Windows) dan navigasi ke lokasi Anda mem-pull repository ini
-[3] Jalankan perintah `npm run start`
-[4] Buka browser dan ketik `http://localhost:9090`
+1. Pull repository ini
+2. Buka terminal / powershell (pada Windows) dan navigasi ke lokasi Anda mem-pull repository ini
+3. Jalankan perintah `npm run start`
+4. Buka browser dan ketik `http://localhost:9090`
 
 ## Membuild
 
