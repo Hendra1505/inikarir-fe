@@ -1145,17 +1145,177 @@
 		</div> <!-- /.end container -->
 	</footer>
 
-	<!-- Histats.com  START  (aync)-->
-<script class="invisible" type="text/javascript">var _Hasync= _Hasync|| [];
-	_Hasync.push(['Histats.start', '1,4745538,4,10,200,40,00010000']);
-	_Hasync.push(['Histats.fasi', '1']);
-	_Hasync.push(['Histats.track_hits', '']);
-	(function() {
-	var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-	hs.src = ('//s10.histats.com/js15_as.js');
-	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-	})();</script>
-	<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4745538&101" alt="" border="0"></a></noscript>
-	<!-- Histats.com  END  -->
+		<script>
+		$(document).ready(function () {
+		   $(".fancybox").fancybox({
+			  openEffect: "none",
+			  closeEffect: "none"
+		   });
+		});
+	 </script>
+	 <script>
+			  $(document).ready(function () {
+				 // Add minus icon for collapse element which is open by default
+				 $(".collapse.show").each(function () {
+					$(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+				 });
+  
+				 // Toggle plus minus icon on show hide of collapse element
+				 $(".collapse").on('show.bs.collapse', function () {
+					$(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+				 }).on('hide.bs.collapse', function () {
+					$(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+				 });
+			  });
+	 </script>
+	 
+	 <script type="text/javascript">
+	 
+		  function tombol_satu(){
+			  var klik = "1";
+			  
+			  $.ajax({	
+				  type: 'post',
+				  url: "hitung.php",
+				  data: {'klik': klik},
+					  success: function(data) {
+					  window.open('form_daftar.php?asal=lp_global&posisi=btn1','_self');
+				  }
+			  });
+		  }
+		  
+		  function tombol_dua(){
+			  var klik = "2";
+			  
+			  $.ajax({	
+				  type: 'post',
+				  url: "hitung.php",
+				  data: {'klik': klik},
+					  success: function(data) {
+					  window.open('form_daftar.php?asal=lp_global&posisi=btn2','_self');
+				  }
+			  });
+		  }
+		  
+		  function gambar_satu(){
+			  var klik = "3";
+			  
+			  $.ajax({	
+				  type: 'post',
+				  url: "hitung.php",
+				  data: {'klik': klik},
+					  success: function(data) {
+					  window.open('https://global.inikarir.com/sa/hmg/', '_blank');
+				  }
+			  });
+		  }
+		  
+		  function gambar_dua(){
+			  var klik = "4";
+			  
+			  $.ajax({	
+				  type: 'post',
+				  url: "hitung.php",
+				  data: {'klik': klik},
+					  success: function(data) {
+					  window.open('https://global.inikarir.com/tr/hos/', '_blank');
+				  }
+			  });
+		  }
+		  
+		  function gambar_tiga(){
+			  var klik = "5";
+			  
+			  $.ajax({	
+				  type: 'post',
+				  url: "hitung.php",
+				  data: {'klik': klik},
+					  success: function(data) {
+					  window.open('https://global.inikarir.com/sg/moh/', '_blank');
+				  }
+			  });
+		  }
+		  
+		  
+		  
+		  function tombol_tiga(){
+			  var klik = "6";
+			  $.ajax({	
+				  type: 'post',
+				  url: "hitung.php",
+				  data: {'klik': klik},
+					  success: function(data) {
+					  window.open('form_daftar.php?asal=lp_global&posisi=btn3','_self');
+				  }
+			  });
+		  }
+		  
+		  function gambar_empat(){
+			  var klik = "7";
+			  
+			  $.ajax({	
+				  type: 'post',
+				  url: "hitung.php",
+				  data: {'klik': klik},
+					  success: function(data) {
+					  window.open('https://global.inikarir.com/sa/spc/', '_blank');
+				  }
+			  });
+		  }
+		  
+		  function gambar_lima(){
+			  var klik = "8";
+			  
+			  $.ajax({	
+				  type: 'post',
+				  url: "hitung.php",
+				  data: {'klik': klik},
+					  success: function(data) {
+					  window.open('https://global.inikarir.com/kw/acc/', '_blank');
+				  }
+			  });
+		  }
+		  
+		  function gambar_enam(){
+			  var klik = "9";
+			  
+			  $.ajax({	
+				  type: 'post',
+				  url: "hitung.php",
+				  data: {'klik': klik},
+					  success: function(data) {
+					  window.open('https://global.inikarir.com/kw/mst/', '_blank');
+				  }
+			  });
+		  }
+		  
+	  </script>
+	 
+	  
+	  <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+  <!-- Histats.com  START  (aync)-->
+  <script type="text/javascript">var _Hasync= _Hasync|| [];
+  _Hasync.push(['Histats.start', '1,4745538,4,10,200,40,00010000']);
+  _Hasync.push(['Histats.fasi', '1']);
+  _Hasync.push(['Histats.track_hits', '']);
+  (function() {
+  var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+  hs.src = ('//s10.histats.com/js15_as.js');
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+  })();</script>
+  <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4745538&101" alt="" border="0"></a></noscript>
+  <!-- Histats.com  END  -->
+	  <!-- AWAL GOOGLE ANALITYC-->
+	  <!-- Google tag (gtag.js) -->
+	  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBVY9WBX19"></script>
+	  <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+	  
+		gtag('config', 'G-NBVY9WBX19');
+	  </script>
+	  <!-- AKHIR GOOGLE ANALITYC-->
+	
 </body>
 </html>
