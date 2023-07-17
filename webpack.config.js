@@ -21,13 +21,13 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({ 
-			filename: 'index.html',
-			template: './src/index.html',
+			filename: 'detail.html',
+			template: './src/detail.html',
 			chunks: ['main'],
 		}),
 		new HtmlWebpackPlugin({ 
-			filename: 'detail.html',
-			template: './src/detail.html',
+			filename: 'index.html',
+			template: './src/index.html',
 			chunks: ['main'],
 		}),
 		new webpack.ProvidePlugin({

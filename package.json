@@ -1,8 +1,8 @@
 {
   "name": "inikarir",
   "version": "1.0.0",
-  "description": "a inikarir frontend template",
-  "main": "src/index.html",
+  "description": "Inikarir landing page spc",
+  "main": "src/detail.html",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack build --mode=production",
