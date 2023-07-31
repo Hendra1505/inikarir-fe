@@ -21,11 +21,6 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({ 
-			filename: 'detail.html',
-			template: './src/detail.html',
-			chunks: ['main'],
-		}),
-		new HtmlWebpackPlugin({ 
 			filename: 'index.html',
 			template: './src/index.html',
 			chunks: ['main'],
