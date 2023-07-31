@@ -14,7 +14,7 @@ module.exports = {
 	},
 	devServer: {
 		static: path.resolve(__dirname, 'dist'),
-		port: 9090,
+		port: 9093,
 		hot: true,
 		compress: false,
 		historyApiFallback: true,
@@ -25,11 +25,6 @@ module.exports = {
 			template: './src/index.html',
 			chunks: ['main'],
 		}),
-		// new HtmlWebpackPlugin({ 
-		// 	filename: 'detail.html',
-		// 	template: './src/detail.html',
-		// 	chunks: ['main'],
-		// }),
 		new webpack.ProvidePlugin({
 			$: "jquery",
 			jQuery: "jquery"
