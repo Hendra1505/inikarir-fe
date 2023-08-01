@@ -16,7 +16,7 @@ if (mysqli_connect_errno()){
         $email  = $_POST['email'];
 		//MEMBUAT simpan
 		mysqli_query($koneksi, "INSERT INTO subscribe(email,dari) 
-	                       VALUES('$email','sa_hmg')");
+	                       VALUES('$email','sa_spc')");
 	                       
 	echo "<script>alert('Data Subscribe berhasil di tambahkan!');history.go(-1);</script>";
 	  // header('location:./');
