@@ -14,7 +14,7 @@ module.exports = {
 	},
 	devServer: {
 		static: path.resolve(__dirname, 'dist'),
-		port: 9090,
+		port: 9091,
 		hot: true,
 		compress: false,
 		historyApiFallback: true,
@@ -23,11 +23,6 @@ module.exports = {
 		new HtmlWebpackPlugin({ 
 			filename: 'index.html',
 			template: './src/index.html',
-			chunks: ['main'],
-		}),
-		new HtmlWebpackPlugin({ 
-			filename: 'detail.html',
-			template: './src/detail.html',
 			chunks: ['main'],
 		}),
 		new webpack.ProvidePlugin({
