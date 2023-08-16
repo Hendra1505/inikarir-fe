@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+
+Sitemap: https://global.inikarir.com/sitemap.xml
+
+User-agent: Googlebot
+Allow: /public/
+
+User-agent: Bingbot
+Allow: /public/
+
+User-agent: Yahoo Slurp
+Allow: /public/
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: *
+Disallow: /
