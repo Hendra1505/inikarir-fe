@@ -115,6 +115,39 @@ var testimonySlider = new Swiper(testimonySliderEl$, {
 });
 
 // ...
+// TESTIMONi SLIDER
+// ...
+var testimonySliderEl$ = document.getElementById('testimoni-slider');
+var testimonySlider = new Swiper(testimonySliderEl$, {
+	modules: [Navigation, Scrollbar],
+	navigation: {
+        nextEl: ".testimoni-swiper-button-next",
+        prevEl: ".testimoni-swiper-button-prev",
+    },
+	spaceBetween: 0,
+	slidesPerView: 1,
+	breakpoints: {
+		480: {
+			spaceBetween: 0,
+			slidesPerView: 1,
+		},
+		767: {
+			spaceBetween: 10,
+			slidesPerView: 2,
+		},
+		980: {
+			spaceBetween: 15,
+			slidesPerView: 2,
+		},
+		1200: {
+			spaceBetween: 20,
+			slidesPerView: 2,
+		}
+	},
+});
+
+
+// ...
 // GALLERY SLIDER
 // ...
 var gallerySliderEl$ = document.getElementById('gallery');
